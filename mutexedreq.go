@@ -1,7 +1,6 @@
 package mutexedreq
 
 import (
-	"fmt"
 	"github.com/codegangsta/negroni"
 	"github.com/gorilla/context"
 	"net/http"
