@@ -1,4 +1,4 @@
-# mutexedreq
+# mutexedreq [![Coverage Status](https://coveralls.io/repos/peterdeka/mutexedreq/badge.svg?branch=master&service=github)](https://coveralls.io/github/peterdeka/mutexedreq?branch=master)
 A simple middleware to mutex requests based on an arbitrary gorilla/context key.
 ##Why mutex?
 If you want critical/atomic requests handling for some resources, for example db payment objects or critical userinfo editing that rely on external services responses (Stripe in our case) and you have a middleware that can provide a unique `reqId` bound to that resource, just place a *mutexedreq* handler in the request serving stack.
